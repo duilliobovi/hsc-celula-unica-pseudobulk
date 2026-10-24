@@ -1,0 +1,13 @@
+# R version 4.6.1 (2026-06-24) - versões usadas na execução de reports/
+limma==3.68.5
+glmnet==5.1
+pROC==1.19.1
+ggplot2==4.0.3
+ggrepel==0.9.8
+data.table==1.18.6.1
+Matrix==1.7.5
+cluster==2.1.8.2
+nnls==1.6
+SummarizedExperiment==1.42.0
+jsonlite==2.0.0
+testthat==3.3.2

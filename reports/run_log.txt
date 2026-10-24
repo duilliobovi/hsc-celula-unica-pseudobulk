@@ -1,0 +1,2 @@
+Células no compartimento CD34+: 8795 (HSC: 1421)
+Métricas gravadas em reports/metrics.json

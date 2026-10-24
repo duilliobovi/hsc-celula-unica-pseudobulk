@@ -1,0 +1,309 @@
+{
+  "n_cells_compartment": 8795,
+  "cells_by_donor": [
+    {
+      "HSC": 206,
+      "progenitor": 1640,
+      "_row": "D1"
+    },
+    {
+      "HSC": 612,
+      "progenitor": 1511,
+      "_row": "D2"
+    },
+    {
+      "HSC": 603,
+      "progenitor": 4223,
+      "_row": "D3"
+    }
+  ],
+  "genes_tested": 9221,
+  "signature": {
+    "n_up": 516,
+    "n_down": 588,
+    "top_up": ["MEG3", "HLF", "HOPX", "AVP", "CRHBP", "RBPMS", "PCDH9", "PRSS1", "NRIP1", "SKAP1", "IDS", "CLEC9A", "EMCN", "MECOM", "GATA3", "HEMGN", "BCL2A1", "CD52", "TM4SF1", "LIMCH1"],
+    "top_down": ["IGLL1", "TYMS", "PCNA", "VPREB1", "S100A9", "H2AFZ", "HBD", "S100A8", "NUSAP1", "IRF8", "VPREB3", "TUBA1B", "HMGB2", "CENPU", "CXCR4", "STMN1", "CD79A", "GINS2", "UBE2C", "LMNB1"]
+  },
+  "known_markers": {
+    "measured": ["HLF", "CRHBP", "AVP", "MECOM", "PROM1", "HOPX", "MLLT3", "PRDM16", "SPINK2", "MEIS1", "CD34", "EMCN", "GATA2", "HOXA9"],
+    "in_top50_up": ["HLF", "CRHBP", "AVP", "MECOM", "HOPX", "MLLT3", "EMCN"],
+    "p_value": 2.97e-13
+  },
+  "pseudoreplication": {
+    "significant_pseudobulk": 2947,
+    "significant_cell_level": 5650,
+    "median_neglog10p_pseudobulk": 0.992866,
+    "median_neglog10p_cell_level": 2.519029
+  },
+  "cell_level_lodo": [
+    {
+      "donor": "D1",
+      "n_hsc": 206,
+      "n_progenitor": 1640,
+      "auc_signature": 0.993566,
+      "ci_low": 0.990969,
+      "ci_high": 0.996164,
+      "auc_markers": 0.98208,
+      "markers_ci_low": 0.976588,
+      "markers_ci_high": 0.987573,
+      "null_q95": 0.685552,
+      "p_random": 0.000999
+    },
+    {
+      "donor": "D2",
+      "n_hsc": 612,
+      "n_progenitor": 1511,
+      "auc_signature": 0.967009,
+      "ci_low": 0.960143,
+      "ci_high": 0.973875,
+      "auc_markers": 0.939583,
+      "markers_ci_low": 0.929376,
+      "markers_ci_high": 0.94979,
+      "null_q95": 0.599609,
+      "p_random": 0.000999
+    },
+    {
+      "donor": "D3",
+      "n_hsc": 603,
+      "n_progenitor": 4223,
+      "auc_signature": 0.976789,
+      "ci_low": 0.973025,
+      "ci_high": 0.980554,
+      "auc_markers": 0.941452,
+      "markers_ci_low": 0.933411,
+      "markers_ci_high": 0.949492,
+      "null_q95": 0.614953,
+      "p_random": 0.000999
+    }
+  ],
+  "pseudobulk_overall": [
+    {
+      "model": "baseline",
+      "RMSE": 0.084748,
+      "MAE": 0.073081,
+      "Pearson": 0.056392,
+      "CCC": 0.005075,
+      "C_index": 0.518089
+    },
+    {
+      "model": "glmnet",
+      "RMSE": 0.04654,
+      "MAE": 0.03789,
+      "Pearson": 0.85684,
+      "CCC": 0.840062,
+      "C_index": 0.833189
+    },
+    {
+      "model": "nnls",
+      "RMSE": 0.120732,
+      "MAE": 0.09914,
+      "Pearson": 0.504605,
+      "CCC": 0.445864,
+      "C_index": 0.683393
+    },
+    {
+      "model": "signature",
+      "RMSE": 0.070578,
+      "MAE": 0.056677,
+      "Pearson": 0.591795,
+      "CCC": 0.567243,
+      "C_index": 0.70629
+    }
+  ],
+  "pseudobulk_per_donor": [
+    {
+      "model": "baseline",
+      "donor": "D1",
+      "RMSE": 0.085521,
+      "MAE": 0.07347,
+      "CCC": 0,
+      "C_index": 0.5
+    },
+    {
+      "model": "glmnet",
+      "donor": "D1",
+      "RMSE": 0.036059,
+      "MAE": 0.028806,
+      "Pearson": 0.963018,
+      "CCC": 0.899717,
+      "C_index": 0.92397
+    },
+    {
+      "model": "nnls",
+      "donor": "D1",
+      "RMSE": 0.155138,
+      "MAE": 0.136177,
+      "Pearson": 0.519644,
+      "CCC": 0.368562,
+      "C_index": 0.697977
+    },
+    {
+      "model": "signature",
+      "donor": "D1",
+      "RMSE": 0.057953,
+      "MAE": 0.047559,
+      "Pearson": 0.787817,
+      "CCC": 0.687305,
+      "C_index": 0.798635
+    },
+    {
+      "model": "baseline",
+      "donor": "D2",
+      "RMSE": 0.0843,
+      "MAE": 0.073765,
+      "CCC": 0,
+      "C_index": 0.5
+    },
+    {
+      "model": "glmnet",
+      "donor": "D2",
+      "RMSE": 0.042323,
+      "MAE": 0.03435,
+      "Pearson": 0.943254,
+      "CCC": 0.863341,
+      "C_index": 0.909744
+    },
+    {
+      "model": "nnls",
+      "donor": "D2",
+      "RMSE": 0.062104,
+      "MAE": 0.049575,
+      "Pearson": 0.799108,
+      "CCC": 0.776031,
+      "C_index": 0.795634
+    },
+    {
+      "model": "signature",
+      "donor": "D2",
+      "RMSE": 0.084323,
+      "MAE": 0.067597,
+      "Pearson": 0.532913,
+      "CCC": 0.404456,
+      "C_index": 0.678893
+    },
+    {
+      "model": "baseline",
+      "donor": "D3",
+      "RMSE": 0.084419,
+      "MAE": 0.072009,
+      "CCC": 0,
+      "C_index": 0.5
+    },
+    {
+      "model": "glmnet",
+      "donor": "D3",
+      "RMSE": 0.058365,
+      "MAE": 0.050512,
+      "Pearson": 0.946881,
+      "CCC": 0.761003,
+      "C_index": 0.899267
+    },
+    {
+      "model": "nnls",
+      "donor": "D3",
+      "RMSE": 0.125714,
+      "MAE": 0.11167,
+      "Pearson": 0.785479,
+      "CCC": 0.255209,
+      "C_index": 0.79067
+    },
+    {
+      "model": "signature",
+      "donor": "D3",
+      "RMSE": 0.066893,
+      "MAE": 0.054875,
+      "Pearson": 0.750928,
+      "CCC": 0.598351,
+      "C_index": 0.777927
+    }
+  ],
+  "rmse_ci": [
+    {
+      "model": "baseline",
+      "estimate": 0.084748,
+      "ci_low": 0.081862,
+      "ci_high": 0.087782
+    },
+    {
+      "model": "glmnet",
+      "estimate": 0.04654,
+      "ci_low": 0.044223,
+      "ci_high": 0.048693
+    },
+    {
+      "model": "nnls",
+      "estimate": 0.120732,
+      "ci_low": 0.115454,
+      "ci_high": 0.12584
+    },
+    {
+      "model": "signature",
+      "estimate": 0.070578,
+      "ci_low": 0.066838,
+      "ci_high": 0.074678
+    }
+  ],
+  "best_model": "glmnet",
+  "paired_tests": [
+    {
+      "comparison": "glmnet vs baseline",
+      "median_diff": -0.028749,
+      "p_value": 1.62593e-45,
+      "donors_better": 3,
+      "n_donors": 3,
+      "p_holm": 3.251859e-45
+    },
+    {
+      "comparison": "glmnet vs signature",
+      "median_diff": -0.013191,
+      "p_value": 1.431178e-22,
+      "donors_better": 3,
+      "n_donors": 3,
+      "p_holm": 1.431178e-22
+    },
+    {
+      "comparison": "glmnet vs nnls",
+      "median_diff": -0.055252,
+      "p_value": 1.022444e-68,
+      "donors_better": 3,
+      "n_donors": 3,
+      "p_holm": 3.067333e-68
+    }
+  ],
+  "external": {
+    "genes_used": {
+      "up": 50,
+      "down": 50
+    },
+    "auc": 0.977778,
+    "p_random": 0.003996,
+    "hsc_vs_mpp_p": 0.171429,
+    "hsc_ranks": {
+      "5852-HSC": 3,
+      "6792-HSC": 1,
+      "7256-HSC": 6,
+      "7653-HSC": 4
+    },
+    "median_score": {
+      "Bcell": -0.168911,
+      "CD4Tcell": -0.138869,
+      "CD8Tcell": -0.156381,
+      "CLP": -0.392484,
+      "CMP": -0.188932,
+      "Ery": -0.446903,
+      "GMP": -0.349059,
+      "HSC": 0.161477,
+      "LMPP": -0.13453,
+      "MEP": -0.271365,
+      "Mono": -0.242969,
+      "MPP": 0.073578,
+      "NKcell": -0.200836
+    }
+  },
+  "versions": {
+    "R": "R version 4.6.1 (2026-06-24)",
+    "limma": "3.68.5",
+    "glmnet": "5.1",
+    "nnls": "1.6"
+  }
+}
